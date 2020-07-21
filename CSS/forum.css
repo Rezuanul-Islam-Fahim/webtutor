@@ -1,0 +1,141 @@
+div.forum-cont {
+	overflow: hidden;
+	padding-left: 4px;
+	text-align: start;
+}
+p.forum-title {
+	color: #3F3F3F;
+	font-size: 33px;
+	font-family: Famico;
+	font-weight: 600;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+div.forum-details {
+	margin-top: 12px;
+	width: auto;
+}
+div.forum-details img {
+	vertical-align: text-top;
+	width: 20px;
+	margin-right: 2px;
+}
+div.forum-details p {
+	float: left;
+	margin: 0;
+	margin-right: 12px;
+	padding: 0;
+	color: #5F5F5F;
+	font-size: 18px;
+}
+img.forum-img {
+	width: 590px;
+	margin: 22px 4%;
+}
+div.forum-description {
+	overflow: hidden;
+	width: auto;
+}
+div.forum-description p {
+	font-size: 21px;
+	margin: 5px;
+	font-family: Calibri;
+}
+div.forum-description ul {
+	margin: 8px 40px;
+	padding: 0;
+	font-size: 20px;
+	font-family: Calibri;
+}
+div.forum-share-cont {
+	width: auto;
+}
+p.share {
+	display: block;
+	font-size: 18px;
+	font-family: Calibri;
+	float: left;
+}
+div.fb-share {
+	display: inline-block;
+	font-family: Arial Rounded MT;
+	font-size: 13px;
+	padding: 3px;
+	color: #FFFFFF;
+	background-color: #3D6A9A;
+	border-radius: 3px;
+	margin: 0 20px 0 40px;
+}
+div.fb-share img {
+	width: 16px;
+	vertical-align: text-top;
+	margin-right: 3px;
+}
+div.tweet {
+	margin-left: 23px;
+	font-family: Arial Rounded MT;
+	display: inline-block;
+	font-size: 13px;
+	padding: 3px;
+	color: #FFFFFF;
+	background-color: #0093FF;
+	border-radius: 3px;
+}
+div.tweet img {
+	width: 16px;
+	vertical-align: text-top;
+	margin-right: 3px;
+}
+div.share-details {
+	position: relative;
+	display: inline-block;
+}
+span.share {
+	cursor: default;
+	border-radius: 2px;
+	font-size: 14px;
+	position: absolute;
+	border: 1px solid #C2C2C2;
+	background-color: #F3F3F3;
+	color: #282828;
+	text-align: center;
+	padding: 3px;
+	z-index: 1;
+	top: -16%;
+	left: 91%;
+}
+span.share::after {
+	content: " ";
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	margin-top: -6px;
+	border-width: 6px;
+	border-style: solid;
+	border-color: transparent #AAAAAA transparent transparent;
+}
+div.google-plus {
+	margin-left: 43px;
+	font-family: Arial;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 2px 4px;
+	color: #FF2A2D;
+	background-color: #FFFFFF;
+	border: 1px solid #A6A6A6;
+	border-radius: 3px;
+}
+div.print-email {
+	cursor: default;
+	font-family: Arial Rounded MT;
+	margin-left: 23px;
+	display: inline-block;
+	font-size: 13px;
+	padding: 3px;
+	color: #1D1D1D;
+	background-color: #E5E5E5;
+	border: 1px solid #898989;
+	border-radius: 3px;
+}

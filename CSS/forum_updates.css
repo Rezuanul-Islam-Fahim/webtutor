@@ -1,0 +1,32 @@
+div.recent-posts {
+	padding: 10px;
+	overflow: hidden;
+}
+div.recent-posts img {
+	height: 64px;
+	width: 64px;
+	float: left;
+	margin-right: 8px;
+	border: 1px solid #CBCBCB;
+	padding: 6px;
+	border-radius: 3px;
+}
+div.recent-posts a:link {
+	text-decoration: none;
+	color: #335DFF;
+	font-size: 16px;
+}
+div.recent-posts a:visited {
+	text-decoration: none;
+	color: #335DFF;
+	font-size: 16px;
+}
+div.recent-posts a:hover {
+	color: #0042C9;
+}
+div.recent-posts p {
+	color: #424242;
+	font-size: 15px;
+	margin-top: 2px;
+	margin-bottom: 0;
+}

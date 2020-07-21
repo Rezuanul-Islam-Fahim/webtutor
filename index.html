@@ -1,0 +1,531 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Webtutor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="Images/webtutor-icon [1600x1200].png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="CSS/homepage.css"/>
+<script src="Javascript/loader.js"></script>
+</head>
+<body onload="myFunction()" style="margin:0px;">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <div class="main-cont">
+    <div class="top">
+      <div class="log-sign">
+        <div class="log-sign-cont"><a class="log-sign-cont-link" id="login-modal-btn" href="#login">Login</a>
+          <div id="mymodal" class="login-modal"> <span class="login-modal-close">&times;</span>
+            <div class="login-modal-content login-modal-animate-zoom">
+              <div class="login-modal-content-header">
+                <p style="float:left;line-height:1;cursor:default;font-size: 36px;color:#2A2A2A;margin-top:28px;margin-right:8px" class="logo">webtutor<span style="color:#0B9E17" class="dotcom">.com</span></p>
+                <p class="login-modal-content-header-p">Login</p>
+              </div>
+              <div class="login-modal-container">
+                <input type="text" placeholder="E-mail"/>
+                <input style="margin-bottom:15px" type="password" placeholder="Password"/>
+                <br/>
+                <input type="checkbox" checked/>
+                Remember me<br/>
+                <div onClick="" class="login-modal-login">Login</div>
+                <a class="login-modal-content-f-pass-create" href="#forgot-password">Forgot Password?</a><br/>
+                <a style="margin-top: 4px" class="login-modal-content-f-pass-create" href="#create-account">Create an Account</a></div>
+            </div>
+          </div>
+          <script>
+var modal = document.getElementById('mymodal');
+var btn = document.getElementById("login-modal-btn");
+var span = document.getElementsByClassName("login-modal-close")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script> 
+          <a class="log-sign-cont-link" href="#signup">Sign Up</a></div>
+      </div>
+      <div class="logo-nav-cont">
+        <div class="logo-cont"> <a style="font-weight:bold;color:#FFFFFF" class="logo" href="#home">webtutor<span class="dotcom">.com</span></a></div>
+        <ul class="nav">
+          <li><a class="nav-link" href="homepage.html">Home</a></li>
+          <li class="dropdown"><a href="HTML/pc-posts.html" class="nav-drop">PC Zone</a>
+            <div class="dropdown-main-cont">
+              <div class="dropdown-cont"><a class="dropdown-link" href="HTML/pc-posts.html">PC Tips & Tricks</a><a class="dropdown-link" href="HTML/pc-posts.html">PC Softwares Review</a><a class="dropdown-link" href="HTML/pc-posts.html">PC Games Review</a><a class="dropdown-link" href="HTML/pc-posts.html">PC Hardware Problems & Solutions</a><a class="dropdown-link" href="HTML/pc-posts.html">PC Hardware Review</a></div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="HTML/android-posts.html" class="nav-drop">Android Zone</a>
+            <div class="dropdown-main-cont">
+              <div class="dropdown-cont"><a class="dropdown-link" href="HTML/android-posts.html">Android Tips & Tricks</a><a class="dropdown-link" href="HTML/android-posts.html">Android Apps Review</a><a class="dropdown-link" href="HTML/android-posts.html">Android Games Review</a><a class="dropdown-link" href="HTML/android-posts.html">Android Root</a><a class="dropdown-link" href="HTML/android-posts.html">Android Phones Review</a><a class="dropdown-link" href="HTML/android-posts.html">Android Phone Problems & Solutions</a></div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="HTML/windows-posts.html" class="nav-drop">Windows</a>
+            <div class="dropdown-main-cont">
+              <div class="dropdown-cont"><a class="dropdown-link" href="HTML/windows-posts.html">Windows PC Review</a><a class="dropdown-link" href="HTML/windows-posts.html">Windows Software Review</a><a class="dropdown-link" href="HTML/windows-posts.html">Windows Phone Review</a><a class="dropdown-link" href="HTML/windows-posts.html">Windows Tips & Trciks</a></div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="HTML/programming-posts.html" class="nav-drop">Programming</a>
+            <div class="dropdown-main-cont">
+              <div class="dropdown-cont"><a class="dropdown-link" href="HTML/wordpress-posts.html">Wordpress</a><a class="dropdown-link" href="HTML/wapka-posts.html">Wapka</a><a class="dropdown-link" href="HTML/programming-posts.html">Wix</a><a class="dropdown-link" href="HTML/programming-posts.html">Joomla</a><a class="dropdown-link" href="HTML/programming-posts.html">HTML</a><a class="dropdown-link" href="HTML/programming-posts.html">CSS</a><a class="dropdown-link" href="HTML/programming-posts.html">Javascript</a><a class="dropdown-link" href="HTML/programming-posts.html">PHP</a><a class="dropdown-link" href="HTML/programming-posts.html">JQuery</a></div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="HTML/books-posts.html" class="nav-drop">Books</a>
+            <div class="dropdown-main-cont">
+              <div class="dropdown-cont"><a class="dropdown-link" href="HTML/books-posts.html">Programming</a><a class="dropdown-link" href="HTML/books-posts.html">General Knowledge</a><a class="dropdown-link" href="HTML/books-posts.html">Story</a><a class="dropdown-link" href="HTML/books-posts.html">History</a><a class="dropdown-link" href="HTML/books-posts.html">Science Fiction</a><a class="dropdown-link" href="HTML/books-posts.html">Comics</a><a class="dropdown-link" href="HTML/books-posts.html">Novels</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="top-container">
+        <div class="left">
+          <div class="left-cont">
+            <div class="title">Featured Post</div>
+            <div class="featured-post"> <a href="#featured-post" class="featured-post-link">Install windows 10 Pro on your computer without CD/DVD rom <img class="featured-post-img" src="Images/security-data-lock-and-finger-with-key-1024x1024.jpg" alt="featured-post"/></a>
+              <div class="featured-post-details">
+                <p>John Cena</p>
+                <p>On</p>
+                <a href="#pc-tips">Pc Tips & Tricks</a>
+                <p>at</p>
+                <p>5 hours ago</p>
+              </div>
+              <div class="featured-post-details2">
+                <p>6:00 AM</p>
+                <p>|</p>
+                <p>6 Comment</p>
+                <p>|</p>
+                <p>7 Views</p>
+              </div>
+              <p class="featured-post-des">First make your pendrive bootable.Then insert your pendrive to your computer.Now restart your computer.When your pc is being restarting......... </p>
+              <div class="read-more-btn-pos">
+                <button class="read-more"><img src="Images/Untitled-34.png" alt="arrow"/><span>READ FULL ARTICLE</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="left-cont">
+            <div class="title">Forum Updates</div>
+            <div class="update"><a class="update-link" href="#forum"><img class="update-img" src="Images/pic_screen.jpg" alt="Forum-Thumbnail"/>How to make pendrive bootable without any software</a>
+              <p class="update-p">First connect your pendrive to your pc.Then press (windows button + r) together.Then type "diskpart" in diskpart.Now type "list disk" and....</p>
+              <div class="read-more-btn-pos">
+                <button class="read-more"><img src="Images/Untitled-34.png" alt="arrow"/><span>READ MORE</span></button>
+              </div>
+              <div class="up-details-cont">
+                <div class="up-details">
+                  <p>David Steiner</p>
+                  <p>On</p>
+                  <a class="up-details-link" href="#">Pc Tips & Tricks</a>
+                  <p>at</p>
+                  <p>5 hours ago</p>
+                </div>
+                <br/>
+                <div class="up-details-m">
+                  <p>7:00 PM</p>
+                  <p>|</p>
+                  <p>1 Comment</p>
+                  <p>|</p>
+                  <p>4 Views</p>
+                </div>
+              </div>
+            </div>
+            <div class="update"><a class="update-link" href="#forum"><img class="update-img" src="Images/search-engine-submission-2317.jpg" alt="Forum-Thumbnail"/>Learn how to add own website on search engines</a>
+              <p class="update-p">First connect your pendrive to your pc.Then press (windows button + r) together.Then type "diskpart" in diskpart.Now type "list disk" and....</p>
+              <div class="read-more-btn-pos">
+                <button class="read-more"><img src="Images/Untitled-34.png" alt="arrow"/><span>READ MORE</span></button>
+              </div>
+              <div class="up-details-cont">
+                <div class="up-details">
+                  <p>David Steiner</p>
+                  <p>On</p>
+                  <a class="up-details-link" href="#">Pc Tips & Tricks</a>
+                  <p>at</p>
+                  <p>5 hours ago</p>
+                </div>
+                <br/>
+                <div class="up-details-m">
+                  <p>7:00 PM</p>
+                  <p>|</p>
+                  <p>1 Comment</p>
+                  <p>|</p>
+                  <p>4 Views</p>
+                </div>
+              </div>
+            </div>
+            <div class="update"><a class="update-link" href="#forum"><img class="update-img" src="Images/pic_firefox128.png" alt="Forum-Thumbnail"/>Make your password secure on firefox</a>
+              <p class="update-p">First connect your pendrive to your pc.Then press (windows button + r) together.Then type "diskpart" in diskpart.Now type "list disk" and....</p>
+              <div class="read-more-btn-pos">
+                <button class="read-more"><img src="Images/Untitled-34.png" alt="arrow"/><span>READ MORE</span></button>
+              </div>
+              <div class="up-details-cont">
+                <div class="up-details">
+                  <p>David Steiner</p>
+                  <p>On</p>
+                  <a class="up-details-link" href="#">Pc Tips & Tricks</a>
+                  <p>at</p>
+                  <p>5 hours ago</p>
+                </div>
+                <br/>
+                <div class="up-details-m">
+                  <p>7:00 PM</p>
+                  <p>|</p>
+                  <p>1 Comment</p>
+                  <p>|</p>
+                  <p>4 Views</p>
+                </div>
+              </div>
+            </div>
+            <div class="update"><a class="update-link" href="#forum"><img class="update-img" src="Images/download-2-1-150x150.jpg" alt="Forum-Thumbnail"/>Earn money from your website/wapsite from neobux.com</a>
+              <p class="update-p">First connect your pendrive to your pc.Then press (windows button + r) together.Then type "diskpart" in diskpart.Now type "list disk" and....</p>
+              <div class="read-more-btn-pos">
+                <button class="read-more"><img src="Images/Untitled-34.png" alt="arrow"/><span>READ MORE</span></button>
+              </div>
+              <div class="up-details-cont">
+                <div class="up-details">
+                  <p>David Steiner</p>
+                  <p>On</p>
+                  <a class="up-details-link" href="#">Pc Tips & Tricks</a>
+                  <p>at</p>
+                  <p>5 hours ago</p>
+                </div>
+                <br/>
+                <div class="up-details-m">
+                  <p>7:00 PM</p>
+                  <p>|</p>
+                  <p>1 Comment</p>
+                  <p>|</p>
+                  <p>4 Views</p>
+                </div>
+              </div>
+            </div>
+            <div class="update"><a class="update-link" href="#forum"><img class="update-img" src="Images/pic_ie128.jpg" alt="Forum-Thumbnail"/>Enabling javascript on internet explorer</a>
+              <p class="update-p">First connect your pendrive to your pc.Then press (windows button + r) together.Then type "diskpart" in diskpart.Now type "list disk" and....</p>
+              <div class="read-more-btn-pos">
+                <button class="read-more"><img src="Images/Untitled-34.png" alt="arrow"/><span>READ MORE</span></button>
+              </div>
+              <div class="up-details-cont">
+                <div class="up-details">
+                  <p>David Steiner</p>
+                  <p>On</p>
+                  <a class="up-details-link" href="#">Pc Tips & Tricks</a>
+                  <p>at</p>
+                  <p>5 hours ago</p>
+                </div>
+                <br/>
+                <div class="up-details-m">
+                  <p>7:00 PM</p>
+                  <p>|</p>
+                  <p>1 Comment</p>
+                  <p>|</p>
+                  <p>4 Views</p>
+                </div>
+              </div>
+            </div>
+            <div class="update"><a class="update-link" href="#forum"><img class="update-img" src="Images/img_html5_html5.gif" alt="Forum-Thumbnail"/>Learn HTML 5 easily from this book</a>
+              <p class="update-p">First connect your pendrive to your pc.Then press (windows button + r) together.Then type "diskpart" in diskpart.Now type "list disk" and....</p>
+              <div class="read-more-btn-pos">
+                <button class="read-more"><img src="Images/Untitled-34.png" alt="arrow"/><span>READ MORE</span></button>
+              </div>
+              <div class="up-details-cont">
+                <div class="up-details">
+                  <p>David Steiner</p>
+                  <p>On</p>
+                  <a class="up-details-link" href="#">Pc Tips & Tricks</a>
+                  <p>at</p>
+                  <p>5 hours ago</p>
+                </div>
+                <br/>
+                <div class="up-details-m">
+                  <p>7:00 PM</p>
+                  <p>|</p>
+                  <p>1 Comment</p>
+                  <p>|</p>
+                  <p>4 Views</p>
+                </div>
+              </div>
+            </div>
+            <div class="update"><a class="update-link" href="#forum"><img class="update-img" src="Images/pic_angular.jpg" alt="Forum-Thumbnail"/>Learn Angular JS from this book and be a javascript master</a>
+              <p class="update-p">First connect your pendrive to your pc.Then press (windows button + r) together.Then type "diskpart" in diskpart.Now type "list disk" and....</p>
+              <div class="read-more-btn-pos">
+                <button class="read-more"><img src="Images/Untitled-34.png" alt="arrow"/><span>READ MORE</span></button>
+              </div>
+              <div class="up-details-cont">
+                <div class="up-details">
+                  <p>David Steiner</p>
+                  <p>On</p>
+                  <a class="up-details-link" href="#">Pc Tips & Tricks</a>
+                  <p>at</p>
+                  <p>5 hours ago</p>
+                </div>
+                <br/>
+                <div class="up-details-m">
+                  <p>7:00 PM</p>
+                  <p>|</p>
+                  <p>1 Comment</p>
+                  <p>|</p>
+                  <p>4 Views</p>
+                </div>
+              </div>
+            </div>
+            <div class="update"><a class="update-link" href="#forum"><img class="update-img" src="Images/security-data-lock-and-finger-with-key-1024x1024.jpg" alt="Forum-Thumbnail"/>Protect your pc from dangerous hackers attack</a>
+              <p class="update-p">First connect your pendrive to your pc.Then press (windows button + r) together.Then type "diskpart" in diskpart.Now type "list disk" and....</p>
+              <div class="read-more-btn-pos">
+                <button class="read-more"><img src="Images/Untitled-34.png" alt="arrow"/><span>READ MORE</span></button>
+              </div>
+              <div class="up-details-cont">
+                <div class="up-details">
+                  <p>David Steiner</p>
+                  <p>On</p>
+                  <a class="up-details-link" href="#">Pc Tips & Tricks</a>
+                  <p>at</p>
+                  <p>5 hours ago</p>
+                </div>
+                <br/>
+                <div class="up-details-m">
+                  <p>7:00 PM</p>
+                  <p>|</p>
+                  <p>1 Comment</p>
+                  <p>|</p>
+                  <p>4 Views</p>
+                </div>
+              </div>
+            </div>
+            <div style="border-bottom:none" class="update"><a class="update-link" href="#forum"><img class="update-img" src="Images/pic_screen.jpg" alt="Forum-Thumbnail"/>Make your PC a offline server</a>
+              <p class="update-p">First connect your pendrive to your pc.Then press (windows button + r) together.Then type "diskpart" in diskpart.Now type "list disk" and....</p>
+              <div class="read-more-btn-pos">
+                <button class="read-more"><img src="Images/Untitled-34.png" alt="arrow"/><span>READ MORE</span></button>
+              </div>
+              <div class="up-details-cont">
+                <div class="up-details">
+                  <p>David Steiner</p>
+                  <p>On</p>
+                  <a class="up-details-link" href="#">Pc Tips & Tricks</a>
+                  <p>at</p>
+                  <p>5 hours ago</p>
+                </div>
+                <br/>
+                <div class="up-details-m">
+                  <p>7:00 PM</p>
+                  <p>|</p>
+                  <p>1 Comment</p>
+                  <p>|</p>
+                  <p>4 Views</p>
+                </div>
+              </div>
+            </div>
+            <div class="more-updates-cont">
+              <p>More Updates &raquo;</p>
+              <ul class="more-updates">
+                <li><a href="#update">Prev</a></li>
+                <li><a class="active" href="#update">1</a></li>
+                <li><a href="#update">2</a></li>
+                <li><a href="#update">3</a></li>
+                <li><a href="#update">4</a></li>
+                <li><a href="#update">5</a></li>
+                <li><a style="background-color:#F4F4F4;cursor:not-allowed" href="#update">..</a></li>
+                <li><a href="#update">198</a></li>
+                <li><a href="#update">Next</a></li>
+                <li><a href="#update">Last</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="right-cont">
+            <div class="home-login">
+              <p>Login:</p>
+              <input class="homepage-login" type="text" placeholder="Login"/>
+              <p>Password:</p>
+              <input class="homepage-password" type="password" placeholder="Password"/>
+              <br/>
+              <input type="checkbox" checked/>
+              <p style="float:right;display:block;margin-right:154px">Remember me</p>
+              <button>Login</button>
+              <br/>
+              <a href="#f-pass">Forgot Password?</a> <br/>
+              <a href="#create">Create an Account</a> </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="right-cont">
+            <div class="search">
+              <h2>Search through the site</h2>
+              <input type="text" name="search" placeholder="Search...."/>
+              <button>Search</button>
+            </div>
+          </div>
+          <div class="right-cont">
+            <div class="title">Forum Category</div>
+            <div class="forum-cat">
+              <div class="forum-cat-left"> <a style="margin-top:0" class=" f-cat" href="HTML/android-posts.html">Android Zone</a><a class=" f-cat" href="HTML/pc-posts.html">PC Zone</a><a class=" f-cat" href="HTML/windows-posts.html">Windows</a><a class=" f-cat" href="HTML/programming-posts.html">Programming</a><a class=" f-cat" href="HTML/operator-posts.html">Operator Tricks</a><a class=" f-cat" href="HTML/movies-posts.html">Movies Review</a><a class=" f-cat" href="HTML/hacking-posts.html">Hacking</a><a class=" f-cat" href="HTML/online-earning-posts.html">Online Earning</a></div>
+              <div class="forum-cat-right"><a style="margin-top:0" class=" f-cat" href="HTML/smartphones-review-posts.html">Smartphones Review</a><a class=" f-cat" href="HTML/education-posts.html">Education</a><a class=" f-cat" href="HTML/books-posts.html">Books</a><a class=" f-cat" href="HTML/facebook-posts.html">Facebook Tips</a><a class=" f-cat" href="HTML/wapka-posts.html">Wapka</a><a class=" f-cat" href="HTML/wordpress-posts.html">Wordpress</a><a class=" f-cat" href="HTML/seo-posts.html">SEO</a><a class=" f-cat" href="HTML/helpline-posts.html">Helpline</a></div>
+            </div>
+          </div>
+          <div class="right-cont">
+            <div class="title">Top 10 Authors </div>
+            <div class="top-10-author"><a href="#"><img src="Images/gettyimages-79636546.jpg" alt="author-name"/>John Morison</a>
+              <div class="author-post"> <a href="#">20 Post</a></div>
+            </div>
+            <div class="top-10-author"><a href="#"><img src="Images/17.jpg" alt="author-name"/>John Steiner</a>
+              <div class="author-post"> <a href="#">20 Post</a></div>
+            </div>
+            <div class="top-10-author"><a href="#"><img src="Images/Dc6rHg.jpg" alt="author-name"/>John Cena</a>
+              <div class="author-post"> <a href="#">20 Post</a></div>
+            </div>
+            <div class="top-10-author"><a href="#"><img src="Images/img_profile_goldberg_301_303_s_c1.jpg" alt="author-name"/>Johnson</a>
+              <div class="author-post"> <a href="#">20 Post</a></div>
+            </div>
+            <div class="top-10-author"><a href="#"><img src="Images/Ken_Richters_Profile.jpg" alt="author-name"/>Michale Kelvin</a>
+              <div class="author-post"> <a href="#">20 Post</a></div>
+            </div>
+            <div class="top-10-author"><a href="#"><img src="Images/LW620p26Partner-Profile.jpg" alt="author-name"/>Jahid Hasan</a>
+              <div class="author-post"> <a href="#">20 Post</a></div>
+            </div>
+            <div class="top-10-author"><a href="#"><img src="Images/photo.jpg" alt="author-name"/>Moinul Hossain</a>
+              <div class="author-post"> <a href="#">20 Post</a></div>
+            </div>
+            <div class="top-10-author"><a href="#"><img src="Images/Mani_Zadeh_Profile.jpg" alt="author-name"/>Leonardo</a>
+              <div class="author-post"> <a href="#">20 Post</a></div>
+            </div>
+            <div class="top-10-author"><a href="#"><img src="Images/tumblr_static_7oq38fq4rxgk4oc888w4k4c0w.jpg" alt="author-name"/>David Clark</a>
+              <div class="author-post"> <a href="#">20 Post</a></div>
+            </div>
+            <div style="border-bottom:none" class="top-10-author"><a href="#"><img src="Images/stephen-morin.jpg" alt="author-name"/>Rezuanul Islam</a>
+              <div class="author-post"> <a href="#">20 Post</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-container">
+          <div class="bottom-left">
+            <div class="bottom-content">
+              <h2>Popular Posts</h2>
+              <div class="content"> <a href="#forum">Enabling .net frameware on windows 8 without software</a>
+                <p>By:</p>
+                <p>Jainul Islam</p>
+              </div>
+              <div class="content"> <a href="#forum">How to make a free website</a>
+                <p>By:</p>
+                <p>Rezuanul Islam</p>
+              </div>
+              <div class="content"> <a href="#forum">Istalling windows 8 on PC by CD</a>
+                <p>By:</p>
+                <p>Mahbub Islam</p>
+              </div>
+              <div class="content"> <a href="#forum">Istalling windows 8 on PC by bootable pendrive</a>
+                <p>By:</p>
+                <p>David Steiner</p>
+              </div>
+              <div class="content"> <a href="#forum">Bit Defender 2016 antivius(review)</a>
+                <p>By:</p>
+                <p>Johnson</p>
+              </div>
+              <div class="content"> <a href="#forum">Make your pendrive bootable by novicort</a>
+                <p>By:</p>
+                <p>Mitchel Stark</p>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-middle">
+            <div class="bottom-content">
+              <h2>Top Rated Posts</h2>
+              <div class="content"> <a href="#forum">How to upgrade windows 7 to windows 8</a>
+                <p>(Rating:</p>
+                <p >5.12</p>
+                <p>)</p>
+              </div>
+              <div class="content"> <a href="#forum">How to transfer harddrive space</a>
+                <p>(Rating:</p>
+                <p >4.87</p>
+                <p>)</p>
+              </div>
+              <div class="content"> <a href="#forum">Enabling .net frameware on windows 8 without software</a>
+                <p>(Rating:</p>
+                <p >4.34</p>
+                <p>)</p>
+              </div>
+              <div class="content"> <a href="#forum">How to install php on windows PC</a>
+                <p>(Rating:</p>
+                <p >3.9</p>
+                <p>)</p>
+              </div>
+              <div class="content"> <a href="#forum">Enabling .net frameware</a>
+                <p>(Rating:</p>
+                <p >3.12</p>
+                <p>)</p>
+              </div>
+              <div class="content"> <a href="#forum">How to install php database on windows pc</a>
+                <p>(Rating:</p>
+                <p >2.00</p>
+                <p>)</p>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-right">
+            <div class="bottom-content">
+              <h2>Recent Comments</h2>
+              <div class="content"> <a href="#forum">How to upgrade windows 7 to windows 8</a>
+                <p>Commented by:</p>
+                <p>Fahim</p>
+              </div>
+              <div class="content"> <a href="#forum">How to transfer harddrive space</a>
+                <p>Commented by:</p>
+                <p>Zainul Abedin</p>
+              </div>
+              <div class="content"> <a href="#forum">Learn php(part-8)</a>
+                <p>Commented by:</p>
+                <p>Ishtiaq</p>
+              </div>
+              <div class="content"> <a href="#forum">How to make pendrive bootable</a>
+                <p>Commented by:</p>
+                <p>Fuad</p>
+              </div>
+              <div class="content"> <a href="#forum">How to transfer harddrive space</a>
+                <p>Commented by:</p>
+                <p>Rezuanul Islam</p>
+              </div>
+              <div class="content"> <a href="#forum">How to enable .net frameware</a>
+                <p>Commented by:</p>
+                <p>Fardous Mahmud</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-top">
+        <p style="line-height:0;cursor:default;font-size: 28px;padding:0;background-color:transparent;float:left;font-family:Segoe Print" class="logo">webtutor<span class="dotcom">.com</span></p>
+        <p>201323 Members</p>
+      </div>
+      <div style="width: 180px" class="footer-cont">
+        <h2>Need Help?</h2>
+        <a href="#help">Help Center</a> <a href="#help">Webtutor Terms</a> <a href="#help">Writing Terms</a> <a href="#help">Member Terms</a><a href="#help">Privacy and Policy</a> </div>
+      <div style="margin-right:26px" class="footer-cont">
+        <h2>Join our Community</h2>
+        <a href="#help">Become an author</a> <a href="#help">Sign up</a> <a href="#help">Start writting</a> </div>
+      <div style="margin-right:26px" class="footer-cont">
+        <h2 style="margin-bottom:2px">E-mail Newsletters</h2>
+        <p style="color:#E7E7E7;font-size:13px;margin-top:0;margin-bottom:0">Sign up for new webtutor content,updates,offers.</p>
+        <input type="text" class="footer-email" placeholder="E-mail Address"/>
+        <button class="footer-subscribe">Subscribe</button>
+      </div>
+      <div class="footer-cont">
+        <h2 style="margin-bottom:2px">Contact us</h2>
+        <div class="tooltip"> <a href="#contact-us"> <img class="contact-us" src="Images/facebook-icon.png" alt="facebook"/> </a><span style="margin-left:-44px;width:78px" class="tooltiptext">Facebook</span></div>
+        <div class="tooltip"> <a href="#contact-us"> <img class="contact-us" src="Images/twitter-logo.png" alt="twitter"/> </a><span style="margin-left:-35px;width:60px" class="tooltiptext">Twitter</span></div>
+        <div class="tooltip"> <a href="#contact-us"> <img class="contact-us" src="Images/AppIcon.512x512-75.png" alt="youtube"/> </a><span style="margin-left:-40px;width:68px" class="tooltiptext">Youtube</span></div>
+        <div class="tooltip"> <a href="#contact-us"> <img class="contact-us" src="Images/Blogger_icon.svg.png" alt="blogger"/> </a><span style="margin-left:-38px;width:64px" class="tooltiptext">Blogger</span></div>
+        <div class="tooltip"> <a href="#contact-us"> <img class="contact-us" src="Images/linkedin.png" alt="linkedin"/> </a><span style="margin-left:-36px;width:61px" class="tooltiptext">Linkdin</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; coptright 2016-2017 WebTutor
+      <p style="float:right;line-height:0;margin:10px 0 0 0;padding:0">All rights are reserved</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
